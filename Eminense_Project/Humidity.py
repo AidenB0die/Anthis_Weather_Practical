@@ -38,11 +38,11 @@ fig = go.Figure(data=[go.Table(
   ),
   cells=dict(
     values=[
-      ['Salaries', 'Office', 'Merchandise', 'Legal', '<b>TOTAL</b>'],
+      ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
       [Alphabet[0]],
-      [Alphabet[1]],
-      [Alphabet[2]],
-      [Alphabet[3]]],
+      [],
+      [],
+      []],
     line_color='darkslategray',
     # 2-D list of colors for alternating rows
     fill_color = [[rowOddColor,rowEvenColor,rowOddColor, rowEvenColor,rowOddColor]*5],
