@@ -30,7 +30,7 @@ rowOddColor = '#EB7500'
 
 
 fig = go.Figure(data=[go.Table(
-    header=dict(values=['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+    header=dict(values=['DATES', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
                 line_color='black',
                 fill_color='darkorange',
                 align='left'),
