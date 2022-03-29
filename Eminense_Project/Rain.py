@@ -28,7 +28,7 @@ print(Alphabet)
 fig = px.imshow(Alphabet,
                 labels=dict(x="How much Rain per Day", y="Year", color="How Much Rain"),
                 x=['July 21', 'July 22', 'July 23', 'July 24', 'July 25'],
-                y=['2012', '2013', "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"]
-               )
+                y=['2012', '2013', "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
+                text_auto=True, color_continuous_scale="Blues_r")
 fig.update_xaxes(side="top")
 fig.show()
