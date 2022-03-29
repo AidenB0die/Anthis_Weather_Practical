@@ -34,7 +34,7 @@ fig = go.Figure(data=[go.Table(
                 line_color='black',
                 fill_color='darkorange',
                 align='left'),
-    cells=dict(values=[['July 21', 'July 22', 'July 23', 'July 24' , 'July 25'], # 1st column
+    cells=dict(values=[['July 21', 'July 22', 'July 23', 'July 24' , 'July 25'],
                        Alphabet[0],
                        Alphabet[1],
                        Alphabet[2],
@@ -44,7 +44,7 @@ fig = go.Figure(data=[go.Table(
                        Alphabet[6],
                        Alphabet[7],
                        Alphabet[8],
-                       Alphabet[9]], # 2nd column
+                       Alphabet[9]],
                line_color='black',
                fill_color='orange',
                align='left'))
