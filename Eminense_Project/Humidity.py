@@ -24,31 +24,30 @@ for i in rains:
     Alphabet.append(rains[0:5])
     del rains[0:5]
 
-headerColor = '#BD0000'
+headerColor = '#00AADD'
 rowEvenColor = '#BD5E00'
 rowOddColor = '#EB7500'
 
+
 fig = go.Figure(data=[go.Table(
-  header=dict(
-    values=['<b>Dates</b>','<b>July 21</b>','<b>July 22</b>','<b>July 23</b>','<b>July 24</b>', '<b>July 25</b>'],
-    line_color='black',
-    fill_color=headerColor,
-    align=['left','center'],
-    font=dict(color='white', size=12)
-  ),
-  cells=dict(
-    values=[
-      ['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
-      [Alphabet[0]],
-      [],
-      [],
-      []],
-    line_color='darkslategray',
-    # 2-D list of colors for alternating rows
-    fill_color = [[rowOddColor,rowEvenColor,rowOddColor, rowEvenColor,rowOddColor]*5],
-    align = ['left', 'center'],
-    font = dict(color = 'darkslategray', size = 11)
-    ))
+    header=dict(values=['2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                line_color='black',
+                fill_color='darkorange',
+                align='left'),
+    cells=dict(values=[['July 21', 'July 22', 'July 23', 'July 24' , 'July 25'], # 1st column
+                       Alphabet[0],
+                       Alphabet[1],
+                       Alphabet[2],
+                       Alphabet[3],
+                       Alphabet[4],
+                       Alphabet[5],
+                       Alphabet[6],
+                       Alphabet[7],
+                       Alphabet[8],
+                       Alphabet[9]], # 2nd column
+               line_color='black',
+               fill_color='orange',
+               align='left'))
 ])
 
 fig.show()
