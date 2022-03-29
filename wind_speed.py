@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 t= []
 l=[]
-filename = 'emdata/Eminence_Data.csv'
+filename = 'data/Eminence_Data.csv'
 with open(filename,newline='') as f:
     reader = csv.DictReader(f)
 
