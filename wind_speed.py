@@ -1,12 +1,11 @@
 import plotly.graph_objects as go
 import csv
 from datetime import datetime
-t= []
-l=[]
-filename = 'data/Eminence_Data.csv'
-with open(filename,newline='') as f:
+t = []
+l = []
+filename = 'emdata/Eminence_Data.csv'
+with open(filename, newline='') as f:
     reader = csv.DictReader(f)
-
 
     for row in reader:
         tt = float(row['windspeed'])
@@ -15,7 +14,6 @@ with open(filename,newline='') as f:
         l.append(ll)
         fig = go.Figure()
 
-    print(l[::5])
 
     fig.add_trace(go.Barpolar(
         r=t[:5],
@@ -75,13 +73,20 @@ with open(filename,newline='') as f:
     r=t[45:50],
     theta=l[45:50],
     name='2021',
-    marker_color='rgb(164, 181, 235)'
+    marker_color='rgb(164, 181, 235)',
     ))
+
+fig.update_traces(
+    width=3,
+
+    )
+
 fig.update_layout(
-    title='Wind Speed and Direction, Eminence Indiana',
+    title='Wind Speed and Direction, Eminence Indiana           r=Wind Speed         Theta = Wind Direction',
     font_size=16,
     legend_font_size=16,
     polar_angularaxis_rotation=90,
+    template='plotly_dark'
 
 
 
